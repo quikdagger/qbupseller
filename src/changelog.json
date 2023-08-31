@@ -1,0 +1,82 @@
+[
+    {
+        "version": "v0.2.1.0.2",
+        "description": "Updated Product and Addon json data"
+    },
+    {
+        "version": "v0.2.0.0.2",
+        "description": "Added a disclaimer that requires understanding to use this app"
+    },
+    {
+        "version": "v0.2.0.0.1",
+        "description": "Implemented a large amount of fixes to performance, search functions, app functions. Rewrote Product, Addon, SearchBar, ChangeLog, and Wrapper .js files along with enhancements to Help Desk Assistant using custom Google Search functions."
+    },
+    {
+        "version": "v0.1.7.6.2",
+        "description": "Solved transition issues with changeLog animations in CSS"
+    },
+    {
+        "version": "v0.1.7.5.2",
+        "description": "Help section implementation enhanced with Google based JSON recovery and search indexing"
+    },
+    {
+        "version": "v0.1.7.5.1",
+        "description": "Implemented new help section. This will be a searchable index."
+    },
+    {
+        "version": "v0.1.6.5.1",
+        "description": "UI transitions updated. Stage 4 complete. Small change to the changelog section due to size to allow for scrolling and automatic scrolling"
+    },
+    {
+        "version": "v0.1.6.4.1",
+        "description": "UI transition updated. Stage 3 complete. You can now click on the features to have the information display."
+    },
+    {
+        "version": "v0.1.6.3.1",
+        "description": "Search work-around implemented. Reset now functions since removing data from search does not revert data but real-time search is functioning. SearchBar.js now has a full rewrite for function. "
+    },
+    {
+        "version": "v0.1.6.3",
+        "description": "Real-time search reinstated. Rewrite of SearchBar.js and adding of <SearchBar data={filteredProducts} onDataSearch={handleProductSearch} /> and  <SearchBar data={filteredAddons} onDataSearch={handleAddonSearch} />"
+    },
+    {
+        "version": "v0.1.6.2",
+        "description": "UI transitions updated. Stage 2 complete."
+    },
+    {
+        "version": "v0.1.6.1",
+        "description": "Shut down real-time search due to bug with transition. Will return once new UI animations are in effect."
+    },
+    {
+        "version": "v0.1.6",
+        "description": "Beginning stages of a transition effect for the UI. Work in progress, stage 1 complete"
+    },
+    {
+        "version": "v01.5.1",
+        "description": "Fixed duplication errors in the new search functions"
+    },
+    {
+        "version": "v0.1.5",
+        "description": "Added real-time search to the search function"
+      },      
+    {
+        "version": "v0.1.4",
+        "description": "Added a console.log for debugging."
+    },
+    {
+      "version": "v0.1.3",
+      "description": "Added a changelog."
+    },
+    {
+      "version": "v0.1.2",
+      "description": "Bug fixes and performance enhancements."
+    },
+    {
+        "version": "v0.1.1",
+        "description":"Added a disclaimer section."
+    },
+    {
+        "version":"v0.1.0",
+        "description":"Initial alpha release"
+    }
+  ]

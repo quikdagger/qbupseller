@@ -1,0 +1,96 @@
+[
+  {
+    "name": "Simple Start (1 user)",
+    "features": [
+      "Basic plan with a free guided setup",
+      "Income & Expenses",
+      "Invoice & Payments",
+      "Tax Deductions",
+      "General Reports",
+      "Receipt Capture",
+      "Mileage Tracking",
+      "Cash Flow",
+      "Sales and Sales Tax",
+      "Estimates",
+      "Contractors",
+      "Connect 1 Sales Channel",
+      "1 accountant"
+    ]
+  },
+  {
+    "name": "Essentials (3 users)",
+    "features": [
+      "Income & Expenses",
+      "Invoice & Payments",
+      "Tax Deductions",
+      "General Reports",
+      "Receipt Capture",
+      "Mileage Tracking",
+      "Cash Flow",
+      "Sales and Sales Tax",
+      "Estimates",
+      "Contractors",
+      "Connect 3 Sales Channels",
+      "Bill management",
+      "Enter Time",
+      "2 accountants"
+    ]
+  },
+  {
+    "name": "Plus (5 users)",
+    "features": [
+      "Income & Expenses",
+      "Invoice & Payments",
+      "Tax Deductions",
+      "General Reports",
+      "Receipt Capture",
+      "Mileage Tracking",
+      "Cash Flow",
+      "Sales and Sales Tax",
+      "Estimates",
+      "Contractors",
+      "Connect all Sales Channels",
+      "Bill management",
+      "Enter Time",
+      "Inventory",
+      "Project Tracking",
+      "2 accountants"
+    ]
+  },
+  {
+    "name": "Advanced (25 customizable users)",
+    "features": [
+      "Income & Expenses",
+      "Invoice & Payments",
+      "Tax Deductions",
+      "General Reports",
+      "Receipt Capture",
+      "Mileage Tracking",
+      "Cash Flow",
+      "Sales and Sales Tax",
+      "Estimates",
+      "Contractors",
+      "Connect all Sales Channels",
+      "25 customizable users",
+      "Bill management",
+      "Enter Time",
+      "Inventory",
+      "Project Tracking",
+      "Data Sync with Excel",
+      "Employee Expenses",
+      "Batch Transaction Input",
+      "Custom Access Controls",
+      "Exclusive Premium Apps",
+      "Workflow Automation",
+      "Data Restoration",
+      "24/7 Support/ Training",
+      "Revenue Recognition",
+      "Priority Circle",
+      "Unlimited Chart of Accounts",
+      "Unlimited Classes & Locations",
+      "Create any Report",
+      "Free Training Classes",
+      "3 accountants"
+    ]
+  }
+]

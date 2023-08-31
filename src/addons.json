@@ -1,0 +1,80 @@
+[
+  {
+    "name": "Payroll Core",
+    "features": [
+      "Auto Payroll",
+      "1099 Efile & Pay",
+      "Expert Product Support",
+      "Next Day Deposits",
+      "Auto Tax Forms (Efile)",
+      "401K plans",
+      "Health Benefits"
+    ]
+  },
+  {
+    "name": "Payroll Premium",
+    "features": [
+      "Auto Payroll",
+      "1099 Efile & Pay",
+      "Expert Product Support",
+      "Next Day Deposits",
+      "Auto Tax Forms (Efile)",
+      "Track Time on the go",
+      "24/7 Product Support",
+      "Expert Review",
+      "401K Plans",
+      "Health Benefits",
+      "HR Support Center (3rd Party)",
+      "Workers Comp Admin"
+    ]
+  },
+  {
+    "name": "Payroll Elite",
+    "features": [
+      "Auto Payroll",
+      "1099 Efile & Pay",
+      "Expert Product Support",
+      "Next Day Deposits",
+      "Auto Tax Forms (Efile)",
+      "Track Time on the go",
+      "24/7 Product Support",
+      "Expert Review",
+      "401K Plans",
+      "Health Benefits",
+      "HR Support Center (3rd Party)",
+      "Workers Comp Admin",
+      "Expert Set up",
+      "Track Time on the go & projects on the go",
+      "Tax penalty Protection",
+      "Personal HR Advisor"
+    ]
+  },
+  {
+    "name": "Payments (Merchant Services)",
+    "features": [
+      "Professional Invoicing",
+      "On site or in store",
+      "Simple payment links",
+      "Recurring payments",
+      "Digital payments",
+      "Fast Deposits",
+      "Automatic Bookkeeping",
+      "QB Checking",
+      "Track Invoices progress",
+      "Paid 2x Faster"
+    ]
+  },
+  {
+    "name": "QB Live Bookkeeping",
+    "features": [
+      "Stress-free tax time",
+      "Bookkeepers with experience",
+      "More time each day",
+      "Peace of Mind",
+      "Reconciliation help",
+      "Categorization Help",
+      "Clean slate",
+      "Accurate up-to-date books"
+    ]
+  }
+]

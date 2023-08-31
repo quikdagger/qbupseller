@@ -1,38 +1,278 @@
-.App {
+/* Base styles */
+.body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background-color: #0073e6;
+  color: white;
+  padding: 10px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header2 {
+  background-color: #000000;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Rest of your existing styles */
+
+/* Understood Box */
+.understood-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000000;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  z-index: 999; /* Make sure it's above other elements */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow */
+}
+
+.understood-content {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.understood-button {
+  background-color: #0073e6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.understood-button:hover {
+  background-color: #005cbf;
+}
+
+/* Product list */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product-item {
+  border: 1px solid #000000;
+  padding: 10px;
+  border-radius: 5px;
+  width: calc(33.33% - 20px);
+}
+
+.product-item-label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Addons list */
+.addon-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.addon-item {
+  border: 1px solid #000000;
+  padding: 10px;
+  border-radius: 5px;
+  width: calc(33.33% - 20px); 
+}
+
+.addon-item-label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Features list */
+.features-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.features-list-item {
+  padding: 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.features-list-item.selected {
+  background-color: #f0f0f0;
+}
+
+/* Selected features */
+.selected-features {
+  margin-top: 20px;
+}
+
+.selected-features-item {
+  background-color: #8585ad; /* Set the background color */
+  border: 1px solid white; /* Set the border color */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: white; /* Set the font color */
+}
+
+.selected-features-item-heading {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.selected-features-item-list {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+/* Footer */
+.footer {
+  background-color: #f0f0f0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .product-item {
+    width: calc(50% - 20px);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  position: relative; /* Set the positioning context for child elements */
 }
 
-.App-link {
-  color: #61dafb;
+.background-image {
+  position: fixed; /* Change to fixed positioning */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../public/QB.png');
+  background-size: 80%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0.7; /* Adjust the value to your preference */
+  z-index: -1; /* Send the background image element to the back */
+  pointer-events: none; /* Prevent the new element from capturing interactions */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+/* Content sections with black borders */
+.product-section,
+.addon-section,
+.changelog-section {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid black; /* Change the border color and thickness */
+  border-radius: 5px;
+  margin: 0 10px;
+  overflow: auto;
+}
+
+/* Section heading styles */
+.section-heading {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Changelog section styles */
+.changelog-section {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #000000; /* Change the border color and thickness */
+  border-radius: 5px;
+  margin: 0 10px;
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+/* Changelog list styles */
+.changelog-list {
+  max-height: 800px; /* Set the maximum height for the list */
+  overflow-y: auto; /* Enable vertical scrolling if the content exceeds the max height */
+  padding-left: 20px;
+}
+
+/* Add a fixed height to the changelog list container */
+.changelog-list-scrollable {
+  max-height: 600px; /* Adjust this value as needed */
+  overflow-y: hidden;
+  border: 1px solid #ccc; /* Add a border for visual separation */
+  padding: 10px;
+  margin-top: 10px;
+}
+
+/* Add some margin to the changelog items for spacing */
+.changelog-item {
+  margin-bottom: 15px;
+}
+
+
+/* Scroll animation keyframes */
+@keyframes scrollChangelog {
+  0% {
+    transform: translateY(0);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    transform: translateY(calc(-7 * 3rem)); /* Scroll up by 7 entries */
   }
 }
+
+/* Add depressed button effect for clicked sections */
+.product-section.clicked,
+.addon-section.clicked {
+  background-color: #f0f0f0; /* Change the background color when clicked */
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+
+/* Add a transition for smooth animation */
+.product-section,
+.addon-section {
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+/* Apply border and color changes to feature sections */
+.product-section .features-list,
+.addon-section .features-list,
+.selected-features-item-list {
+  border: 2px solid #8585ad;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  color: white; /* Set the font color */
+  background-color: #8585ad; /* Set the background color */
+}
+
+/* Rest of your styles */
