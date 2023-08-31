@@ -1,70 +1,7 @@
-# Getting Started with Create React App
+This version of the application is in its alpha stage. Currently, the data is generated directly from the training modules, so while it does completely mirror the real-time QuickBooks version as of today, this may not always be the case until I built a json builder for keeping it up to date. Due to this, even if it were entirely up to date, it's advisable to leverage your own understanding and utilize this tool as a supplementary resource rather than a replacement for your knowledge. As time progresses, I will enhance this application by introducing more features and updated information. The assistance section located at the bottom utilizes live extractions through my GoogleSearchWrapper.js. Please note that it will exclusively search pertinent indexed databases and not the unrestricted internet.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Present Implementations: Product, Addon, Changelog, Help Desk Assistant. The Product is constructed based on the primary plans of QBO. Addons are developed using the available addon features for the Product. The Changelog comprises a record of the changes as they have taken place and been rolled out up to the current build.
 
-## Available Scripts
+The Help Desk Assistant functions as a tailored search interface designed for retrieving information related to the custom wrapper and indexing. It's important to understand that I'm currently in the process of building the AI language model, continually utilizing the data gathered from the outcomes produced as people make use of the Help Desk Assistant. In the current iteration, an enhancement from Google has been integrated, allowing me to extract data from external help pages specifically related to QBO. This extracted data plays a pivotal role in training my personalized AI language model, empowering it to actively engage in conversations based on the information sourced from the index.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+While this remains an ongoing effort, it's crucial to emphasize that the outcomes within this section are consistently current and presented in real-time, adapting as new data is integrated. Furthermore, I want to clarify that the advertisement section within the interface is optional. However, it's important to note that without generated income, I am currently unable to subscribe to ad-free services. The advertisement space has been intentionally separated, ensuring that the ads are positioned at the top of the results. This layout allows users to easily scroll past the advertisements and access the "real results" section situated below them.
