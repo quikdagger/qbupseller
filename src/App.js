@@ -15,7 +15,7 @@ const App = () => {
 
   const [productsClicked, setProductsClicked] = useState(false);
   const [addonsClicked, setAddonsClicked] = useState(false);
-  const [understoodClicked, setUnderstoodClicked] = useState(false); // Track if "Understood" is clicked
+  const [understoodClicked, setUnderstoodClicked] = useState(false);
 
   const handleProductSearch = (filteredProducts) => {
     setFilteredProducts(filteredProducts);
@@ -37,7 +37,6 @@ const App = () => {
     setUnderstoodClicked(true);
   };
 
-  // Render the main app content only if "Understood" is clicked
   const renderMainApp = () => {
     if (understoodClicked) {
       return (
@@ -68,7 +67,7 @@ const App = () => {
         </div>
       );
     }
-    return null; // Render nothing if "Understood" is not clicked
+    return null;
   };
 
   return (
@@ -78,11 +77,10 @@ const App = () => {
         Quickbooks UpSeller v.0.2.1.0.2
       </header>
 
-      {/* Understood Box */}
       {!understoodClicked && (
         <div className="understood-box">
-           <div className="understood-content" style={{ textAlign: "justify" }}>
-            <p>
+          <div className="understood-content" style={{ textAlign: "justify" }}>
+          <p>
               This version of the application is in its alpha stage. Currently, the data is generated directly from the training modules, so while it does completely mirror the real-time QuickBooks version as of today, this may not always be the case until I built a json builder for keeping it up to date. Due to this, even if it were entirely up to date, it's advisable to leverage your own understanding and utilize this tool as a supplementary resource rather than a replacement for your knowledge. As time progresses, I will enhance this application by introducing more features and updated information. The assistance section located at the bottom utilizes live extractions through my GoogleSearchWrapper.js. Please note that it will exclusively search pertinent indexed databases and not the unrestricted internet.
             </p>
             <p>
@@ -97,12 +95,10 @@ const App = () => {
           </div>
           <button className="understood-button" onClick={handleUnderstoodClick}>Understood</button>
         </div>
-)}
+      )}
 
-      {/* Render main app content only if "Understood" is clicked */}
       {renderMainApp()}
 
-      {/* Header for GoogleSearchWrapper section */}
       <div className="google-search-header">
         <h2 className="section-heading">Help Desk Assistant</h2>
       </div>
